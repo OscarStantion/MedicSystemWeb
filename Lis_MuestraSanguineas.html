@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Resultados</title>
+    <link rel="stylesheet" href="./css/estilosMuesSanguineas.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1> <img src="./imagenes/logo.png" class="imagen1"></h1>
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="">Registro</a>
+                    <ul class="submenu">
+                        <li><a href="registro_pacientes.html">Registro de Pacientes</a></li>
+                        <li><a href="RegistroMuestras.html">Registro de Muestras</a></li>
+                        <li><a href="registro_examenes.html">Registro de Exámenes</a></li>
+                        <li><a href="Lis_MuestraSanguineas.html">Registro de Sangre</a></li>
+                    </ul>
+                </li>
+                <li><a href="examenes.html">Exámenes</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn-login">Iniciar sesión</a>
+                <a href="Registro.html" class="btn-register">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+    <h1 class="titulo">Listado de muestras sanguineas</h1>
+    <p class="loren">En esta ventana se visualizara todos los registros de la muestras sanguineas <br> hechas a los pacientes</p>
+
+    <div class="search-container">
+        <img class="lupa" src="./imagenes/Icon_lupa.png" alt="">
+        <input type="text" placeholder="INGRESE LA FECHA DE TOMA DE LA MUESTRA">
+        <button>Buscar</button>
+    </div>
+
+    <table class="result-table">
+        <thead>
+            <tr>
+                <th>DNI</th>
+                <th>PACIENTE</th>
+                <th>EDAD</th>
+                <th>DIRECCIÓN</th>
+                <th>SEXO</th>
+                <th>TIPO</th>
+                <th>FECHA</th>
+                <th>DOCTOR</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <!-- Contenedor para los botones -->
+    <div class="button-container">
+        <button class="Vizu">Visualizar</button>
+        <button class="Des">Descargar</button>
+    </div>
+</body>
+</html>

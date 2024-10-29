@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Resultados</title>
+    <link rel="stylesheet" href="./css/estiloLisResultados.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1> <img src="./imagenes/logo.png" class="imagen1"></h1>
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="">Registro</a>
+                    <ul class="submenu">
+                        <li><a href="registro_pacientes.html">Registro de Pacientes</a></li>
+                        <li><a href="RegistroMuestras.html">Registro de Muestras</a></li>
+                        <li><a href="registro_examenes.html">Registro de Exámenes</a></li>
+                        <li><a href="Lis_MuestraSanguineas.html">Registro de Sangre</a></li>
+                    </ul>
+                </li>
+                <li><a href="examenes.html">Exámenes</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn-login">Iniciar sesión</a>
+                <a href="Registro.html" class="btn-register">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+    <h1 class="titulo">Listado de Resultados</h1>
+    <p class="loren">En esta ventalla se visualizara todos los resultados de la muestras sanguineas <br> hechas a los pacientes</p>
+
+    <div class="search-container">
+        <img class="lupa" src="./imagenes/Icon_lupa.png" alt="">
+        <input type="text" placeholder="INGRESE EL NOMBRE DEL PACIENTE">
+        <button>Buscar</button>
+    </div>
+
+    <table class="result-table">
+        <thead>
+            <tr>
+                <th>Prueba</th>
+                <th>Paciente</th>
+                <th>Edad</th>
+                <th>Fecha</th>
+                <th>Muestra</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <!-- Contenedor para los botones -->
+    <div class="button-container">
+        <button class="Vizu">Visualizar</button>
+        <button class="Des">Descargar</button>
+    </div>
+</body>
+</html>

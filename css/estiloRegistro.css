@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Centra horizontalmente */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffff; 
+}
+
+.container {
+    display: flex;
+    /* Agrega espacio entre el logo y el formulario */
+}
+
+
+.img1 {
+    max-width: 200px; 
+    margin-top: 10px; 
+}
+
+.form-container {
+    width: 400px; /* Ancho del formulario */
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(4, 14, 210, 0.3);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    width: 95%; /* Ancho del input */
+}
+
+.form-container button {
+    width: 40%; /* Ancho del botón */
+    background-color: #051651;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.name-container {
+    display: flex; /* Usamos flexbox para alinear los inputs */
+    justify-content: space-between; /* Espacio entre los inputs */
+    gap: 5px;
+}
+
+.input-name, .input-surname {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 48%; /* Ancho de cada input */
+}

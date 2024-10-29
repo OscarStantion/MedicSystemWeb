@@ -1,0 +1,227 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+.imagen1 {
+    max-width: 50px; /* Ajustar tamaño del logo */
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+.menu li {
+    position: relative; /* Necesario para el dropdown */
+}
+
+.menu a {
+    color: #010737;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.menu a:hover {
+    color: #C59C33;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posicionar debajo del menú principal */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los elementos del submenú */
+.submenu li {
+    width: 200px; /* Ajusta el ancho del submenú */
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 20px;
+    color: #010737;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Mostrar el submenú al hacer hover sobre "Registro" */
+.menu li.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Cambiar color en hover */
+.submenu a:hover {
+   
+    color: #C59C33;
+}
+
+/* Flechita para indicar el dropdown */
+.menu .dropdown > a::after {
+    content: " ▼";
+    font-size: 0.8em;
+    margin-left: 5px;
+    color:  #010737;
+}
+.menu .dropdown:hover > a::after {
+    color: #C59C33; /* Color dorado cuando pasas el cursor */
+}
+
+/* Botones de autenticación */
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.btn-login {
+    padding: 10px 20px;
+    border: 2px solid #010737; /* Borde azul oscuro */
+    color: #010737;
+    background-color: white; /* Fondo blanco */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-login:hover {
+    background-color: #f5f5f5; /* Fondo más claro al hacer hover */
+}
+
+.btn-register {
+    padding: 10px 20px;
+    background-color: #010737; /* Fondo azul oscuro */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/********************************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffff;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 800px; /* Aumentamos el ancho */
+    height: auto; /* Altura automática para adaptarse al contenido */
+    padding: 70px; /* Espacio interno (puede ajustarse) */
+    border-radius: 13px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 0 auto;
+
+
+    text-align: left;
+    
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+}
+
+.input-group input {
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    font-size: 0.8rem; /* Hacemos la fuente más pequeña aquí */
+}
+
+.input-group select {
+
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    font-size: 0.8rem; /* Hacemos la fuente más pequeña aquí */
+}
+
+.input-full {
+    margin-bottom: 15px;
+    
+}
+
+.input-full input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    padding: 15px;
+    font-size: 0.8rem; /* Hacemos la fuente más pequeña aquí */
+}
+
+button {
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: small;
+}
+
+button:hover {
+    background-color: #357ab9;
+}

@@ -1,0 +1,89 @@
+body {
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 500px;
+    margin: 100px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000000;
+  }
+
+  .Titulo{
+    text-align: center;
+    margin: 100px auto;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2E3F6B;
+    font-weight: bolder;
+  }
+
+
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo img {
+    width: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin-top: 15px;
+  }
+  
+  button {
+    background-color: #3F8FC4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 82%;
+    margin-top: 25px;
+    margin-left: -25px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .icono1 img{
+     width: 30px;
+     height: 30px;
+     float: left, 12px;
+  }
+
+  .icono2 img{
+    width: 30px;
+    height: 30px;
+    float: left, 12px;
+    margin-top: 10px;
+ }
