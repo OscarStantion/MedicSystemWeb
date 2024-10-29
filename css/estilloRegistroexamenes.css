@@ -1,0 +1,216 @@
+* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+
+
+.imagen1 {
+    max-width: 50px; /* Ajustar tamaño del logo */
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+.menu li {
+    position: relative; /* Necesario para el dropdown */
+}
+
+.menu a {
+    color: #010737;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.menu a:hover {
+    color: #C59C33;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posicionar debajo del menú principal */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los elementos del submenú */
+.submenu li {
+    width: 200px; /* Ajusta el ancho del submenú */
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 20px;
+    color: #010737;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Mostrar el submenú al hacer hover sobre "Registro" */
+.menu li.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Cambiar color en hover */
+.submenu a:hover {
+   
+    color: #C59C33;
+}
+
+/* Flechita para indicar el dropdown */
+.menu .dropdown > a::after {
+    content: " ▼";
+    font-size: 0.8em;
+    margin-left: 5px;
+    color:  #010737;
+}
+.menu .dropdown:hover > a::after {
+    color: #C59C33; /* Color dorado cuando pasas el cursor */
+}
+
+/* Botones de autenticación */
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.btn-login {
+    padding: 10px 20px;
+    border: 2px solid #010737; /* Borde azul oscuro */
+    color: #010737;
+    background-color: white; /* Fondo blanco */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-login:hover {
+    background-color: #f5f5f5; /* Fondo más claro al hacer hover */
+}
+
+.btn-register {
+    padding: 10px 20px;
+    background-color: #010737; /* Fondo azul oscuro */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-register:hover {
+    background-color: #000033; /* Fondo más oscuro al hacer hover */
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #C59C33;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título y descripción centrados */
+.container h1 {
+    font-size: 2em;
+    color: #010737;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilizar la barra de búsqueda */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#searchInput {
+    width: 60%; /* Ajustar ancho */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #C59C33; /* Cambiar color de borde al enfocar */
+}
+
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #C59C33;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #b3862a;
+}
+
+/* Resultados de búsqueda */
+.result-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+    text-align: left; /* Mantener los resultados alineados a la izquierda */
+    background-color: white;
+}
+
+.result-item a {
+    text-decoration: none;
+    color: #010737;
+}
+
+.result-item a:hover {
+    color: #C59C33;
+}
