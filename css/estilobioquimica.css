@@ -1,0 +1,241 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+
+
+.imagen1 {
+    max-width: 50px; /* Ajustar tamaño del logo */
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+.menu li {
+    position: relative; /* Necesario para el dropdown */
+}
+
+.menu a {
+    color: #010737;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.menu a:hover {
+    color: #C59C33;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posicionar debajo del menú principal */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los elementos del submenú */
+.submenu li {
+    width: 200px; /* Ajusta el ancho del submenú */
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 20px;
+    color: #010737;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Mostrar el submenú al hacer hover sobre "Registro" */
+.menu li.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Cambiar color en hover */
+.submenu a:hover {
+   
+    color: #C59C33;
+}
+
+/* Flechita para indicar el dropdown */
+.menu .dropdown > a::after {
+    content: " ▼";
+    font-size: 0.8em;
+    margin-left: 5px;
+    color:  #010737;
+}
+.menu .dropdown:hover > a::after {
+    color: #C59C33; /* Color dorado cuando pasas el cursor */
+}
+
+/* Botones de autenticación */
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.btn-login {
+    padding: 10px 20px;
+    border: 2px solid #010737; /* Borde azul oscuro */
+    color: #010737;
+    background-color: white; /* Fondo blanco */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-login:hover {
+    background-color: #f5f5f5; /* Fondo más claro al hacer hover */
+}
+
+.btn-register {
+    padding: 10px 20px;
+    background-color: #010737; /* Fondo azul oscuro */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-register:hover {
+    background-color: #000033; /* Fondo más oscuro al hacer hover */
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #C59C33;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos y descripciones */
+h1 {
+    color: #010737;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los elementos del formulario */
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+    color:#000000;
+    font-size: 0.9em;
+    width: 40%;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+span {
+   
+    margin-left: 50px;
+    font-size: 0.85em;
+    color: #666;
+}
+
+/* Estilo del botón */
+button[type="submit"] {
+    width: 80%;
+    padding: 15px;
+    background-color:  #2980b9;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;     /* Para centrar el botón */
+    margin: 0 auto; 
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos adicionales para el formulario */
+input[type="text"]:focus {
+    border-color: #C59C33;
+    outline: none;
+    box-shadow: 0 0 5px rgba(197, 156, 51, 0.5);
+}
+
+/* Ajustes de responsividad */
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 1em;
+    }
+}
