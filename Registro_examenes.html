@@ -20,7 +20,7 @@
                         <li><a href="registro_pacientes.html">Registro de Pacientes</a></li>
                         <li><a href="RegistroMuestras.html">Registro de Muestras</a></li>
                         <li><a href="registro_examenes.html">Registro de Exámenes</a></li>
-                        <li><a href="registro_sangre.html">Registro de Sangre</a></li>
+                        <li><a href="Lis_MuestraSanguineas.html">Registro de Sangre</a></li>
                     </ul>
                 </li>
                 <li><a href="examenes.html">Exámenes</a></li>
@@ -34,7 +34,7 @@
     </header>
     <div>
   <div class="container">
-       <h1>Registro de examenes</h1>
+       <h1>Busqueda del tipo examenes</h1>
        <p>En esta ventanilla se registrarán los tipos de examenes que realiza laboratorio clínico.</p>
   </div>
   <div class="search-container">
@@ -42,33 +42,35 @@
     <button id="searchButton" onclick="buscar()">Buscar</button>
 </div>
 
-<div id="resultados">
-    <div class="result-item"><a href="bioquimica.html">Bioquímica</a></div>
-    <div class="result-item"><a href="hematologia.html">Hematología y Coagulación</a></div>
-    <div class="result-item"><a href="inmunologia-Serologia.html">Inmunología - Serología</a></div>
-    <div class="result-item"><a href="inmunologia-MarcadoresTumorales.html">Inmunología - Marcadores Tumorales</a></div>
-    <div class="result-item"><a href="inmunologia-MarcadoresVirales.html">Inmunología - Marcadores Virales</a></div>
-    <div class="result-item"><a href="inmunologia-tiroides.html">Inmunología - Tiroides</a></div>
-    <div class="result-item"><a href="Inmunología-Otros.html">Inmunología - Otros</a></div>
-</div>
+<ul id="resultados">
+    <li class="result-item"><a href="bioquimica.html">Bioquímica</a></li>
+    <li class="result-item"><a href="hematologia.html">Hematología y Coagulación</a></li>
+    <li class="result-item"><a href="inmunologia-Serologia.html">Inmunología - Serología</a></li>
+    <li class="result-item"><a href="inmunologia-MarcadoresTumorales.html">Inmunología - Marcadores Tumorales</a></li>
+    <li class="result-item"><a href="inmunologia-MarcadoresVirales.html">Inmunología - Marcadores Virales</a></li>
+    <li class="result-item"><a href="inmunologia-tiroides.html">Inmunología - Tiroides</a></li>
+    <li class="result-item"><a href="Inmunología-Otros.html">Inmunología - Otros</a></li>
+</ul>
 
 <script>
-    function buscar() {
-        const input = document.getElementById('searchInput').value.toLowerCase();
-        const items = document.getElementsByClassName('result-item');
+ function buscar() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const items = document.getElementsByClassName('result-item');
 
-        for (let i = 0; i < items.length; i++) {
-            const item = items[i];
-            
-            if (input.length > 0 && item.textContent.toLowerCase().includes(input)) {
-                item.style.display = 'block'; // Mostrar los resultados coincidentes
-            } else {
-                item.style.display = 'none'; // Ocultar los que no coinciden
-            }
+    for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+
+        // Mostrar solo los resultados coincidentes
+        if (input && item.textContent.toLowerCase().includes(input)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
         }
     }
+}
 
-    document.getElementById('searchInput').addEventListener('keyup', buscar);
+// Ejecutar la función buscar() en tiempo real mientras se escribe en el campo de entrada
+document.getElementById('searchInput').addEventListener('keyup', buscar);
 </script>
 
 </body>
